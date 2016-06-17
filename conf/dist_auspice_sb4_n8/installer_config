@@ -1,0 +1,5 @@
+userName=root
+keyFile=id_dist_auspice.pem
+hostType=linux
+dataStoreName=MONGO
+javaCommand=java -ea -Xms2048M

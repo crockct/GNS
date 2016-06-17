@@ -37,7 +37,9 @@ public class RSync {
     ArrayList<String> command = new ArrayList<>();
     command.add("rsync");
     command.add("-e");
-    command.add("ssh -o StrictHostKeyChecking=no -i " + keyFile.getAbsolutePath());
+    //command.add("ssh -o StrictHostKeyChecking=no -i " + keyFile.getAbsolutePath());
+    command.add("ssh -o StrictHostKeyChecking=no -i /root/.ssh/id_dist_auspice");
+
     command.add(localFile);
     command.add(user + "@" + host + ":" + remoteFile);
     if (verbose) {
